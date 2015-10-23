@@ -3,6 +3,11 @@ package chat.controller;
 import chat.view.ChatView;
 import chat.model.Chatbot;
 
+/**
+ * Controller for the Chatbot project
+ * @author mhop1073
+ * @version 1.2 10/23/15 Displays the Chatbot's userName vaiable.
+ */
 public class ChatController
 {
 
@@ -18,6 +23,16 @@ public class ChatController
 	public void start()
 	{
 		display.displayText(simpleBot.getUserName());
-		
+		chat();
 	}
+	
+	private void chat()
+	{
+		String textFromUser = display.getAnswer("Talk to the chatbot.");
+		while(simpleBot.lengthChecker(textFromUser))
+		{
+			textFromUser = display.getAnswer("Wow" + textFromUser);
+		}
+	}
+	
 }
