@@ -28,6 +28,6 @@ public class ChatView
 	 */
 	public void displayText(String input)
 	{
-		JOptionPane.showMessadeDialog(null, input);
+		JOptionPane.showMessageDialog(null, input);
 	}
 }
