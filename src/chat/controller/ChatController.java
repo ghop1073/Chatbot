@@ -38,8 +38,15 @@ public class ChatController
 				display.displayText("Wow, I had no idea you loved " + simpleBot.getContent());
 			}
 
-			textFromUser = display.getAnswer("Wow" + textFromUser);
+			
+			if(simpleBot.memeChecker(textFromUser))
+			{
+				display.displayText("Wow. What a dank meme you choose.");
+			}
+			
+			textFromUser = display.getAnswer(textFromUser);
 		}
+	
 	}
 
 }
