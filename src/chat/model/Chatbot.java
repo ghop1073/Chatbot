@@ -33,7 +33,9 @@ public class Chatbot
 		buildPoliticalTopicsList();
 		
 	}
-
+/**
+ * Built memesList with strings of memes
+ */
 	private void buildMemesList()
 	{
 		this.memesList.add("Cute Animals");
