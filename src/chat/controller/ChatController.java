@@ -37,9 +37,7 @@ public class ChatController
 			{
 				display.displayText("Wow, I had no idea you loved " + simpleBot.getContent());
 			}
-
-			
-			if(simpleBot.memeChecker(textFromUser))
+			else if(simpleBot.memeChecker(textFromUser))
 			{
 				display.displayText("Wow. What a dank meme you choose.");
 			}
