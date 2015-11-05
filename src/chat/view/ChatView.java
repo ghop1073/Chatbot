@@ -1,6 +1,7 @@
 package chat.view;
 
 import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
 
 /**
  * Popup disply class for GUI interaction in the Chatbot project.
@@ -9,6 +10,14 @@ import javax.swing.JOptionPane;
  */
 public class ChatView
 {
+	private String windowMessage;
+	private ImageIcon chatIcon;
+	
+	public ChatView()
+	{
+		windowMessage = "This message is brought to you by chatbot!";
+		chatIcon = new ImageIcon(getClass().getResource("images/kd8usa.jpg"));
+	}
 	/**
 	 * Display a GUIpopup for collecting user text.
 	 * @param input The tet to show in the popup window.
@@ -18,7 +27,7 @@ public class ChatView
 	{
 		String answer = "";
 		
-		answer = JOptionPane.showInputDialog(null, input);
+		answer = JOptionPane.showInputDialog(null, input, windowMessage, JOptionPane.INFORMATION_MESSAGE, chatIcon, null, "Type here please!").toString();
 		
 		return answer;
 	}
@@ -28,6 +37,6 @@ public class ChatView
 	 */
 	public void displayText(String input)
 	{
-		JOptionPane.showMessageDialog(null, input);
+		JOptionPane.showMessageDialog(null, input, windowMessage, JOptionPane.PLAIN_MESSAGE, chatIcon);
 	}
 }
