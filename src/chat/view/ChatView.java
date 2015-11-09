@@ -32,7 +32,7 @@ public class ChatView
 		return answer;
 	}
 	/**
-	 * Displays a strin to the user with a standard popup.
+	 * Displays a string to the user with a standard popup.
 	 * @param input The supplied text.
 	 */
 	public void displayText(String input)
