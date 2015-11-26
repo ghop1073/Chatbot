@@ -41,6 +41,10 @@ public class ChatController
 			{
 				display.displayText("Wow. What a dank meme you choose.");
 			}
+			else if(simpleBot.politicalTopicChecker(textFromUser))
+			{
+				display.displayText("I am not old enough to vote.");
+			}
 			
 			textFromUser = display.getAnswer(textFromUser);
 		}
