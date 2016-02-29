@@ -44,6 +44,8 @@ public class ChatController
 			
 			textFromUser = display.getAnswer(textFromUser);
 		}
+		
+	private void 
 	
 	}
 

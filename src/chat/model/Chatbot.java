@@ -54,6 +54,11 @@ public class Chatbot
 	private void buildPoliticalTopicsList()
 	{
 
+		this.politicalTopiclist("election");
+		this.politicalTopiclist("liberal");
+		this.politicalTopiclist("Trump");
+		this.politicalTopiclist("vote");
+		
 	}
 
 	/**
