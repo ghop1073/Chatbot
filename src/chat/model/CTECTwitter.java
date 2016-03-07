@@ -12,7 +12,7 @@ public class CTECTwitter
 	private Twitter chatbotTwitter;
 	private ChatController baseController;
 
-	public CTECTwitter()
+	public CTECTwitter(ChatController baseController)
 	{
 		this.baseController = baseController;
 		this.statusList = new ArrayList <Status>();
@@ -24,7 +24,7 @@ public class CTECTwitter
 	{
 		try
 		{
-			chatbotTwitter.updateStatus("I just tweeted from my Java Chatbot program!");
+			chatbotTwitter.updateStatus("I just tweeted from my Java Chatbot program @ChatbotCTEC!");
 		}
 		catch(TwitterException error)
 		{
